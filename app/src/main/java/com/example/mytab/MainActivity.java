@@ -41,11 +41,8 @@ public class MainActivity extends AppCompatActivity {
         edtTextLName = findViewById(R.id.editTextLastName);
         edtNumberAge = findViewById(R.id.editNumberAge);
 
-        button.setOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        button.setOnClickListener( (View view) -> {
                 tabLayout.addView(generateTableRow(edtTextFName.getText().toString(), edtTextLName.getText().toString(), edtNumberAge.getText().toString()), 1);
-            }
         });
     }
 
