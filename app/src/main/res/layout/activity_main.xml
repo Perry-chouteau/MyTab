@@ -6,64 +6,71 @@
     android:layout_height="match_parent"
     android:layout_row="5"
     tools:context=".MainActivity"
-    android:background="@color/blueLight">
+    android:background="@color/grey">
 
     <Button
         android:id="@+id/button"
-        android:layout_width="128dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="28dp"
-        android:text="Button"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_style"
+        android:text="@string/send"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNumberAge"
-        android:background="@color/blueDark"
-        android:textColor="@color/orange"/>
-        <!--android:backgroundC="@color/blueDark"-->
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNumberAge" />
 
     <EditText
         android:id="@+id/editTextFirstName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
         android:ems="10"
+        android:hint="@string/fNameHint"
         android:inputType="textPersonName"
-        android:hint="FirstName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textAlignment="center"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextLastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
         android:ems="10"
+        android:hint="@string/lNameHint"
         android:inputType="textPersonName"
-        android:hint="LastName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextFirstName"
-        android:textAlignment="center"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirstName" />
 
     <EditText
         android:id="@+id/editNumberAge"
-        android:layout_width="129dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="28dp"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
         android:ems="10"
+        android:hint="@string/ageHint"
         android:inputType="number"
-        android:hint="Age"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textAlignment="center" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLastName" />
+
 
     <ScrollView
-        android:layout_width="303dp"
-        android:layout_height="172dp"
-        android:layout_marginTop="160dp"
+        android:id="@+id/scrollView2"
+        android:layout_width="369dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="196dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -71,7 +78,39 @@
         <TableLayout
             android:id="@+id/tableLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></TableLayout>
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:text="@string/fNameHint"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:text="@string/lNameHint"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:text="@string/ageHint"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+        </TableLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

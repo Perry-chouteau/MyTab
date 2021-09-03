@@ -2,10 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="blueDark">#081F35</color>
-    <color name="blueLight">#009ABF</color>
-    <color name="grey">#A2A092</color>
-    <color name="orange">#FF5F00</color>
+    <color name="blueDark">#FF081F35</color>
+    <color name="blueLight">#FF009ABF</color>
+    <color name="grey">#FFA2A092</color>
+    <color name="orange">#FFFF5F00</color>
 
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
