@@ -3,20 +3,13 @@ package com.example.mytab;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.support.v4.app.INotificationSideChannel;
-import android.text.format.Time;
 import android.view.Gravity;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
-import android.widget.TableRow.LayoutParams;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -62,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         view_lName.setWidth(0);
         view_lName.setMaxLines(1);
         view_Age.setWidth(0);
-        view_Age.setMaxLines(1);;
+        view_Age.setMaxLines(1);
 //
         view_fName.setTextColor(getResources().getColor(R.color.white));
         view_lName.setTextColor(getResources().getColor(R.color.white));
